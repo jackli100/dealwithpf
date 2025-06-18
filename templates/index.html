@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>modify_pf Web 应用</title>
+</head>
+<body>
+    <h1>上传 .pf 文件</h1>
+    {% if message %}<p style="color:red;">{{ message }}</p>{% endif %}
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="pf_file" accept=".pf">
+        <button type="submit">提交并下载处理结果</button>
+    </form>
+</body>
+</html>
